@@ -1,3 +1,5 @@
+#include <ctime>
+#include <cstdlib>
 #define XY 1
 #define XX 2
 int chromosomeVar;
@@ -11,9 +13,9 @@ int currentMalePopulation = 0;
 int currentFemalePopulation = 0;
 
 void reproduce(int times){
-    x = 0;
+    int x = 0;
     while (x < times){
-        int repVar = rand (1, 2);
+        int repVar = (rand() % 2) + 1;
         currentPopulation++;
         if (repVar == 1){
             currentMalePopulation++;
@@ -26,9 +28,9 @@ void reproduce(int times){
 }
 
 void expectedDeath(int times){
-    x = 0;
+    int x = 0;
     while (x < times){
-        int repVar = rand (1, 11);
+        int repVar = (rand() % 11) + 1;
         currentPopulation--;
         if (repVar <= 6){
             currentMalePopulation--;
@@ -96,7 +98,7 @@ void yearsPassed(double years){
 #define reproduce human(chromosomeVar);*/
 
 
-/*if are gay chick then fuck margot period
+/*if gay then fuck margot period
 if gay {fuck margot};*/
 
 /*

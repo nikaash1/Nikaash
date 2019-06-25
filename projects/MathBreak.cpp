@@ -4,5 +4,3 @@
 #define equals =
 #define four 4
 #define bitch ;
-
-two plus three equals four bitch
