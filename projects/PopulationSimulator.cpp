@@ -20,7 +20,7 @@ void reproduce(int times){
         if (repVar == 1){
             currentMalePopulation++;
         }
-        if (repVar == 2){
+        else if (repVar == 2){
             currentFemalePopulation++;
         }
         x++;
@@ -35,7 +35,7 @@ void expectedDeath(int times){
         if (repVar <= 6){
             currentMalePopulation--;
         }
-        if (repVar > 6){
+        else if (repVar > 6){
             currentFemalePopulation--;
         }
         x++;

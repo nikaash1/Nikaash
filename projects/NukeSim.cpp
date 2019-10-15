@@ -9,10 +9,10 @@ int pearlHarborPopulation = 10000;
 
 
 void nuke(int location){
-    if (location = 1){
+    if (location == 1){
         nagasakiPopulation = nagasakiPopulation - 0.8*nagasakiPopulation;
     }
-    if (location = 2){
+    if (location == 2){
         hiroshimaPopulation = hiroshimaPopulation - 0.8*hiroshimaPopulation;
     }
 }
